@@ -1,7 +1,16 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    val student1 = Student("Mohamed Ibrahim",100)
+    val student2 = Student("Mo",100)
+    val allStudents = listOf(student1,student2)
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    // get All Students
+    getAllStudents(allStudents)
+
+}
+fun getAllStudents(allStudents: List<Student>) {
+    allStudents.forEach {
+        if (it.garde>50){
+            println("Good Work ${it.name} you are Passed ")
+        }
+    }
 }
