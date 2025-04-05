@@ -5,8 +5,7 @@ fun main(args: Array<String>) {
 
     getAllStudents(allStudents)
     println(calculateGradesAvg(allStudents))
-
-
+    println("hello from mina maher")
 }
 fun getAllStudents(allStudents: List<Student>) {
     allStudents.forEach {
