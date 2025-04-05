@@ -3,13 +3,12 @@ fun main(args: Array<String>) {
     val student2 = Student("Mo",100)
     val allStudents = listOf(student1,student2)
 
-    // get All Students
     getAllStudents(allStudents)
 
 }
 fun getAllStudents(allStudents: List<Student>) {
     allStudents.forEach {
-        if (it.garde>50){
+        if (it.garde>=50){
             println("Good Work ${it.name} you are Passed ")
         }
     }
