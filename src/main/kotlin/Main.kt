@@ -10,9 +10,18 @@ fun main(args: Array<String>) {
 }
 fun getAllStudents(allStudents: List<Student>) {
     allStudents.forEach {
-        if (it.garde>=50){
+        if (it.grade>=50){
             println("Good Work ${it.name} you are Passed ")
         }
     }
 }
-fun calculateGradesAvg(students:List<Student>) = students.map { it.garde }.average()
+fun calculateGradesAvg(students:List<Student>) = students.map { it.grade }.average()
+
+fun calculateMinMaxGrade(student:List<Student>){
+    val grades = student.map{it.grade}
+
+    val maxGrade=grades.max()
+    val minGrade=grades.min()
+
+    println("Your max Grade is:  $maxGrade , MinGrade is: $minGrade ")
+}
