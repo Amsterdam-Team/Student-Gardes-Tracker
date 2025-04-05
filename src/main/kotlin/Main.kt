@@ -4,6 +4,8 @@ fun main(args: Array<String>) {
     val allStudents = listOf(student1,student2)
 
     getAllStudents(allStudents)
+    println(calculateGradesAvg(allStudents))
+
 
 }
 fun getAllStudents(allStudents: List<Student>) {
@@ -13,3 +15,4 @@ fun getAllStudents(allStudents: List<Student>) {
         }
     }
 }
+fun calculateGradesAvg(students:List<Student>) = students.map { it.garde }.average()
